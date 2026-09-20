@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.addon.stamina.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "PlayerMixin"
+  ],
+  "client": [
+    "ImmersiveStaminaHudMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
