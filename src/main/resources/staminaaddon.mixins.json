@@ -1,14 +1,16 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "com.addon.stamina.mixin",
+  "package": "com.yourname.staminaaddon.mixin",
   "compatibilityLevel": "JAVA_17",
+  "refmap": "staminaaddon.refmap.json",
   "mixins": [
-    "PlayerMixin"
+    "FoodDataMixin",
+    "PlayerMixin",
+    "RegenTickProcedureMixin",
+    "StaminaOverlayMixin"
   ],
-  "client": [
-    "ImmersiveStaminaHudMixin"
-  ],
+  "client": [],
   "injectors": {
     "defaultRequire": 1
   }
