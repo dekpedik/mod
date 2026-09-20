@@ -57,8 +57,10 @@ sourceSets.main.resources { srcDir 'src/main/generated' }
 dependencies {
     minecraft 'net.minecraftforge:forge:1.20.1-47.4.20'
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
+    
+    // Подключаем Immersive Stamina для компиляции
+    implementation fg.deobf(files('libs/immersive_stamina.jar'))
 }
-
 jar {
     manifest {
         attributes([
