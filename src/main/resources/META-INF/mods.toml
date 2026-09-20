@@ -1,26 +1,30 @@
 modLoader="javafml"
 loaderVersion="[47,)"
-license="MIT"
+license="All Rights Reserved"
 
 [[mods]]
 modId="staminaaddon"
-version="${file.jarVersion}"
-displayName="Immersive Stamina Hunger Addon"
-authors="Developer"
+version="1.0-SNAPSHOT"
+displayName="Stamina Addon"
+authors="YourName"
 description='''
-Аддон, связывающий уровень сытости, долг стамины и отображение обводки GUI.
+Аддон для Immersive Stamina, исправляющий механику голода и динамический предел регенерации.
 '''
 
 [[dependencies.staminaaddon]]
-    modId="forge"
-    mandatory=true
-    versionRange="[47.4.20,)"
-    ordering="NONE"
-    side="BOTH"
+modId="forge"
+mandatory=true
+versionRange="[47,)"
+ordering="NONE"
+side="BOTH"
 
 [[dependencies.staminaaddon]]
-    modId="minecraft"
-    mandatory=true
-    versionRange="[1.20.1,1.21)"
-    ordering="NONE"
-    side="BOTH"
+modId="minecraft"
+mandatory=true
+versionRange="[1.20.1,1.21)"
+ordering="NONE"
+side="BOTH"
+
+# Обязательная инструкция для загрузки миксинов Forge-модом
+[mixins]
+config="staminaaddon.mixins.json"
